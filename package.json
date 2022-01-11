@@ -3,13 +3,11 @@
   "version": "0.1.0",
   "description": "Description.",
   "main": "dst/api.js",
-  "files": [
-    "dst/"
-  ],
   "scripts": {
-    "clear": "rm -rf ./dst/**",
-    "dev": "npm run clear ; tsc --watch",
-    "build": "npm run clear ; tsc",
+    "clean": "rm -rf ./dst/**",
+    "dev": "npm run clean ; tsc --watch",
+    "build": "npm run clean ; tsc ; node scripts/prepublish.cjs",
+    "publish": "npm run build && sh scripts/publish.sh",
     "test": "mocha -r ts-node/register \"test/**/*.test.ts\""
   },
   "author": "frankkulak",
