@@ -3,6 +3,14 @@
   "version": "0.1.0",
   "description": "Description.",
   "main": "dst/api.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sims4toolkit/name.git"
+  },
+  "homepage": "https://github.com/sims4toolkit/name#readme",
+  "bugs": {
+    "url" : "https://github.com/sims4toolkit/name/issues"
+  },
   "scripts": {
     "clean": "rm -rf ./dst/**",
     "dev": "npm run clean ; tsc --watch",
@@ -11,6 +19,10 @@
     "test": "mocha -r ts-node/register \"test/**/*.test.ts\""
   },
   "author": "frankkulak",
+  "funding": {
+    "type" : "patreon",
+    "url" : "https://www.patreon.com/bePatron?u=40823163"
+  },
   "license": "MIT",
   "devDependencies": {
     "@types/chai": "^4.3.0",
